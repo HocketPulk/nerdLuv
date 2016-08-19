@@ -1,0 +1,21 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #ddd;
+    font-family: Verdana, Helvetica, sans-serif
+}
+h1 {
+    position: absolute;
+    bottom: 1500px;
+}
+#cont {
+    overflow: hidden;
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+    padding: .5em 1em;
+
+    border: 2pt solid #444;
+    background-color: #fff;
+}
