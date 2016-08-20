@@ -6,7 +6,7 @@
 
 <head>
 <title>NerdLuv - Matches Submitted</title>
-<link href="nerdluv.css" rel="stylesheet" >
+<link href="../css/nerdluv.css" rel="stylesheet" >
 <meta charset="utf-8" >
 </head>
 <body>
