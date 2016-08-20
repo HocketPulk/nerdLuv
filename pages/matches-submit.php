@@ -24,7 +24,7 @@ echo "<h1>Matches for ".$name."</h1>";
 
 //switch this stuff out w sql stuff later
 try {
-	$possMatches = fopen("singles.txt", "r"); //will be in sql format 
+	$possMatches = fopen(__DIR__ ."../singles.txt", "r"); //will be in sql format 
 	while (!feof($possMatches)) {
 		$possMatch = explode(",", fgets($possMatches));
 		//0		1		2		3		4		5		6
