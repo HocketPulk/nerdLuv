@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <title>NerdLuv - Signup Submitted</title>
-<link href="nerdluv.css" rel="stylesheet" >
+<link href="../css/nerdluv.css" rel="stylesheet" >
 <meta charset="utf-8" >
 </head>
 <body>
@@ -26,7 +26,7 @@ if ($min >= $max) die("dont be naughty, give a valid age range");
 //i'd sorta rather use a for loop but... ehhh
 $user = $name.",".$gender.",".$age.",".$type.",".$comp.",".$min.",".$max;
 try {
-	file_put_contents("singles.txt", $user);
+	file_put_contents(__DIR__."/../singles.txt", $user);
 	echo "<p>Welcome to NerdLuv, ".$name."</p>";
 } catch (Exception $e) {
 	echo "<p>no database fer u u jerk</p>"
