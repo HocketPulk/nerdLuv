@@ -31,7 +31,7 @@ $entry = implode(",", $user);
 try {
 	file_put_contents(__DIR__."/../singles.txt", $entry, FILE_APPEND);
 ?>
-	<p>Welcome to NerdLuv, <?= $name ?></p>
+	<p>Welcome to NerdLuv, <?= $user[$NAME] ?></p>
 <?php } catch (Exception $e) { ?>
 	<p>no database fer u u jerk</p>
 <?php } ?>
