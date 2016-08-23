@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<?php include("top.html"); ?>
 <!-- signup page for site -->
-
-<head>
-<title>NerdLuv - Signup</title>
-<link href="../css/nerdluv.css" rel="stylesheet" >
-<meta charset="utf-8" >
-</head>
-<body>
-<!-- include header -->
 	
 <div id="main">
 <form action="signup-submit.php" method="post">
@@ -43,6 +33,4 @@ Seeking age:
 </form>
 </div>
 
-<!-- include footer -->
-</body>
-</html>
+<?php include("bottom.html"); ?>
