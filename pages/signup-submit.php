@@ -29,7 +29,7 @@ if (isNotType($user[$TYPE])) die("look i don't like keirsey either but u gotta")
 $entry = implode(",", $user);
 
 try {
-	file_put_contents(__DIR__."/../singles.txt", $entry."\n", FILE_APPEND);
+	file_put_contents(__DIR__."/../singles.txt", "\n".$entry, FILE_APPEND);
 ?>
 	<p>Welcome to NerdLuv, <?= $user[$NAME] ?></p>
 <?php } catch (Exception $e) { ?>
