@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<?php include("top.html"); ?>
 <!-- page to submit name so can view matches -->
-
-<head>
-<title>NerdLuv - Matches</title>
-<link href="../css/nerdluv.css" rel="stylesheet">
-<meta charset="utf-8">
-</head>
-<body>
-<!-- insert common header -->
 
 <div id="main">
 <h1>Returning User:</h1>
@@ -21,6 +11,4 @@ Name:
 </form>
 </div>
 
-<!-- insert common footer -->
-</body>
-</html>
+<?php include("bottom.html"); ?>
