@@ -3,14 +3,14 @@ include("top.html");
 include("constants.php");
 
 function isMatch($possMatch, $user) {
-	return	$possMatch[$NAME] != $user[$NAME] &&		//possMatch isn't user
-			$possMatch[$GENDER] != $user[$GENDER] &&	//possMatch is diff gender
+	return	$possMatch[$NAME] != $user[$NAME] &&				//possMatch isn't user
+			$possMatch[$GENDER] != $user[$GENDER] &&		//possMatch is diff gender
 			$possMatch[$AGE] >= $user[$MIN] &&			//possMatch is old enough
 			$possMatch[$AGE] <= $user[$MAX] &&			//possMatch is young enough
-			strcmp($possMatch[$TYPE], $user[$TYPE]) &&	//possMatch has partial type compatibility
-			$possMatch[$COMP] == $user[$COMP] &&		//possMatch uses same OS
-			$age >= possMatch[$MIN] &&					//user is old enough
-			$age <= possMatch[$MAX];					//user is young enough
+			similar_text($possMatch[$TYPE], $user[$TYPE]) &&	//possMatch has partial type compatibility
+			$possMatch[$COMP] == $user[$COMP] &&			//possMatch uses same OS
+			$age >= possMatch[$MIN] &&				//user is old enough
+			$age <= possMatch[$MAX];				//user is young enough
 }
 
 function printMatch($match) { //to change if we add user.jpg or smth
