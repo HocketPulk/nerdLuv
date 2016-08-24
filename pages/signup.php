@@ -1,36 +1,35 @@
-<?php include("top.html"); ?>
-<!-- signup page for site -->
-	
-<div id="main">
-<form action="signup-submit.php" method="post">
-<!--input names: name, gender, age, type, comp, min, max-->
-Name:
-<input name="name" type="text" size="16">
-<br>
-Gender (Sorry this is a hetero sight):
-<input name="gender" type="radio" value="male" checked>Male
-<input name="gender" type="radio" value="female">Female
-<br>
-Age:
-<input name="age" type="number" min="18" max="150">
-<br>
-Personality type:
-<input name="type" type="text" size="6" maxlength="4">
-(<a href="http://www.humanmetrics.com/cgi-win/JTypes2.asp">Don't know your type?</a>)
-<br>
-Favorite OS:
-<select name="comp"> <!-- snooty shit: who uses just one OS for coding though... -->
-	<option value="windows" selected>Windows</option>
-	<option value="mac">Mac OS X</option>
-	<option value="linux">Linux</option>
-</select>
-<br>
-Seeking age:
-<input name="min" type="number" min="18" max="150">
- to <input name="max" type="number" min="18" max="150">
-<br>
-<input type="submit" value="Sign Up" >
-</form>
-</div>
-
-<?php include("bottom.html"); ?>
+		<form action="pages/signup-submit.php" method="post">
+                    <dl>
+                        <dd>
+                            <strong>Name:</strong><br />
+                            <input type="text" name="name" size="16" placeholder="First and Last Name" />
+                        </dd>
+                        <dd>
+                            <strong>Gender:</strong><br />
+                            <input type="radio" name="gender" value="M" />Male<br />
+                            <input type="radio" name="gender" value="F" />Female
+                        </dd>
+                        <dd>
+                            <strong>Age:</strong><br />
+                            <input type="number" name="age" min="18" max="150" placeholder="Age" />
+                        </dd>
+                        <dd>
+                            <strong>Personality Type:</strong><br />
+                            <input type="text" name="type" size="6" maxlength="4" /><br />
+                            <a href="http://www.humanmetrics.com/cgi-win/JTypes2.asp" alt="personality test"><em>Don't know your type?</em></a>
+                        </dd>
+                        <dd>
+                            <strong>Favorite OS:</strong><br />
+                            <select name="comp">
+                                <option value="Windows" selected>Microsoft Windows</option>
+                                <option value="Mac OS X">Mac OS X</option>
+                                <option value="Linux">Linux</option>
+                            </select>
+                        </dd>
+                        <dd>
+                            <strong>Seeking Age:</strong><br />
+                            <input type="number" name="min" min="18" max="150" placeholder="min" /> to <input type="number" name="max" min="18" max="150" placeholder="max" />
+                        </dd>
+                    </dl>
+                    <input class="submit" type="submit" value="Sign Up" />
+                </form>
