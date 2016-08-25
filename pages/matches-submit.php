@@ -49,7 +49,7 @@ function printMatch($match) { //to change if we add user.jpg or smth
 	global $COMP;
 ?>
 	<div class="match">
-	<h2><?= $match[$NAME] ?></h2>
+	<h3><?= $match[$NAME] ?></h3>
 	<ul>
 		<li>gender: <?= $match[$GENDER] ?></li>
 		<li>age: <?= $match[$AGE] ?></li>
@@ -64,7 +64,7 @@ $name = $_GET["name"];
 $user = getUser($name);
 if ($user == 0) die("User not found.");
 ?>
-<h1>Matches for <?= $name ?> </h1>
+<h2>Matches for <?= $name ?> </h2>
 <?php
 try {
 	$possMatches = fopen(__DIR__ ."/../$USERS", "r");
