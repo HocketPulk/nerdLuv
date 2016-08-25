@@ -48,7 +48,7 @@ function printMatch($match) { //to change if we add user.jpg or smth
 	global $TYPE;
 	global $COMP;
 ?>
-	<div class=\"match\">
+	<div class="match">
 	<h2><?= $match[$NAME] ?></h2>
 	<ul>
 		<li>gender: <?= $match[$GENDER] ?></li>
