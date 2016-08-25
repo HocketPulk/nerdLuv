@@ -121,7 +121,7 @@ form em:hover {
 	display: none;
 }
 div.match {
-    display: block;
+    display: inline-block;
     float: left;
     clear: both;
 
