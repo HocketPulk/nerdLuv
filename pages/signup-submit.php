@@ -9,7 +9,7 @@ function isNotType($type) {
 }
 ?>
 
-<h1>Thank you!</h1>
+<h3>Thank you!</h3>
 <br><br>
 <?php
 //input names: name, gender, age, type, comp, min, max
