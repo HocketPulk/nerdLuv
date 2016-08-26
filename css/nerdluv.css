@@ -1,0 +1,159 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+    background-color: #ddd;
+    color: #555;
+}
+h1 {
+    position: absolute;
+    bottom: 1500px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+div.main {
+    display: block;
+    margin: 0;
+
+}
+#b1 {
+    display: block;
+    margin: 0 auto;
+}
+#cont {
+    overflow: hidden;
+    max-width: 1000px;
+    min-height: 900px;
+    display: block;
+    margin: 0 auto;
+    padding-top: .5em;
+    padding-bottom: 0;
+    padding-right: 1em;
+    padding-left: 1em;
+	
+    background-color: #fff;
+}
+footer {
+    text-align: right;
+    clear: both;
+    display: block;
+    width: 100%;
+    padding: 1pt;
+    background-color: #596368;
+    
+    color:#ddd;
+    font-size: 10px;
+}
+footer p:hover {
+	color: #f7e594;
+}
+#options {
+    float: left;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 1pt;
+
+}
+#opts {
+    overflow: hidden;
+    display: block;
+    float: left;
+    padding: 2pt 5pt 2pt 5pt;
+
+    list-style: none;
+    list-style-position: inside;
+    border: 2px solid #596368;
+    border-radius: 10pt;
+}
+#opts a{
+    color: #bd4c5f;
+}
+#register img {
+    display: inline-block;
+    margin-right: 1em;
+    margin-bottom: 3pt;
+    vertical-align: middle;
+}
+#match img {
+    display: inline-block;
+    margin-right: 1em;
+    margin-bottom: 3pt;
+    vertical-align: middle;
+}
+aside {
+    float: right;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 1em;
+    padding: 1pt;
+}
+form {
+    display: block;
+    overflow: hidden;
+    padding-right: 1em;
+    padding-bottom: .5em;
+
+    border: 2px solid #596368;
+    border-radius: 10pt;
+}
+form dl {
+    display: block;
+    margin: 0 auto;
+    padding-top: .5em;
+    text-align: left;
+}
+form dd {
+    display: block;
+    margin: 0 8pt;
+    padding-left: 1em;
+    padding-bottom: 5pt;
+}
+form em {
+    font-size: 10pt;
+}
+form em:hover {
+    font-style:normal;
+    color: #bd4c5f;
+}
+.submit {
+    float: right;
+    margin-top: 5pt;
+    border: 2px solid #596368;
+    border-radius: 10pt;
+}
+
+
+#option1 {
+	display: none;
+}
+
+#option2 {
+	display: none;
+}
+
+.match {
+    display: block;
+	margin-bottom: 5pt;
+	padding-left: 10pt;
+	padding-right: 5pt;
+	
+    border: 2px solid #596368;
+    border-radius: 10pt;
+}
+.match:hover {
+    display: block;
+	margin-bottom: 5pt;
+	padding-left: 10pt;
+	padding-right: 5pt;
+	
+	background-color: #cdd2d2;
+	
+    border: 2px solid #596368;
+    border-radius: 10pt;
+}
+
+h2, h3 {
+	color: #596368;
+}
