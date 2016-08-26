@@ -75,6 +75,13 @@ try {
 			printMatch($possMatch);
 		}
 	}
+	if (!$matches) {
+		?>
+		<div class="matchless">
+		<p>No matches for you. "OTL</p>
+		</div>
+		<?php
+	}
 } catch (Exception $e) { ?>
 	<p>fix ur goddang didly darn singles.txt<p>
 <?php
